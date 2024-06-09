@@ -1,0 +1,13 @@
+# 17 - Faça um programa que calcule e motre a área de um trapézio. Sabe-se que: A = ((base mario + Base Menos) * altura)
+# / 2. Lembre -e a base maior e a base menor devem ser números maior que zero.
+
+base_maior = float(input("Informe o valor da base maior: "))
+base_menor = float(input("Informe o valor da base menos: "))
+altura = float(input("Informe o valor da altura: "))
+
+if base_maior < 0 or base_menor < 0 or altura < 0:
+    print("Valores das bases não podem ser menor que zero")
+
+else:
+    area = ((base_maior + base_menor) * altura) / 2
+    print(f"O valor da área do trapézio é de {area}")
